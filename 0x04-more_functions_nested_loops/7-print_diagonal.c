@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - Print diagonals
+ * print_diagonal - prints diagonals
  * @n: limit
  *
  * Return: void
@@ -20,7 +20,7 @@ for (j = 0; j < i; j++)
 _putchar(' ');
 }
 _putchar('\\');
-_putchar('\\');
+_putchar('\n');
 }
 }
 else
