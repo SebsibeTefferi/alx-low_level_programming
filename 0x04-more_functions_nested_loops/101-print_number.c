@@ -13,7 +13,7 @@ unsigned int m;
 
 if (n < 0)
 {
-_putchar('_');
+_putchar('-');
 m = -n;
 }
 else
