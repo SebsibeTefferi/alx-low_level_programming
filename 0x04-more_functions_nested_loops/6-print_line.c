@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - Print underscores
+ * print_line - Prints underscores
  * @n: limit
  *
  * Return: void
@@ -18,5 +18,5 @@ for (i = 0; i < n; i++)
 _putchar('_');
 }
 }
-_putchar('\n')
+_putchar('\n');
 }
