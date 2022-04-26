@@ -3,15 +3,18 @@
 /**
  * _strlen - lenght of string
  * @s:char
+ *
  * Return:int
  */
+
 int _strlen(char *s)
 {
-  int i;
+int u;
 
-    for (i = 0; s[i] != "\0"; i++)
-    {
-	continue;
-    }
-return (i);
+u = 0;
+while (s[u] != '\0')
+{
+u++;
+}
+return (u);
 }
