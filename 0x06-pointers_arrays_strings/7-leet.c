@@ -1,28 +1,29 @@
-#include "main.h"
 /**
  * leet - translates string to 1337
+ * 
  * @string: pointer to string
+ * 
  * Return: returns translated string
  */
-char *leet(char *string)
-{
-int a;
-int b;
 
-char lower[] = "aeotl";
-char upper[] = "AEOTL";
-char numbers[] = "43071";
+char *leet(char *s)
+{
+int i, c = 0;
+int sI[] = {97, 101, 111, 116, 108};
+int uI[] = {65, 69,79,84, 76};
+int n[] = {52, 51, 48, 55, 49};
 
-for (a = 0; string[a] != '\0'; a++)
+while (s[c] != '\0')
 {
-for (b = 0; lower[b] != '\0' && upper[b] != '\0'; b++)
+for (i = 0; i < 5; i++)
 {
-if (string[a] == lower[b] || string[a] == upper[b])
+if (s[c] == sI[i] || s[c] == uI[i])
 {
-string[a] = numbers[b];
+s[c] = n[i];
 break;
 }
 }
+c++;
 }
-return (string);
+return (s);
 }

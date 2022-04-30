@@ -1,36 +1,29 @@
-#include "main.h"
 /**
  * cap_string - capitalizes the words of a string
+ * 
  * @s: string
+ * 
  * Return: s
  */
+
 char *cap_string(char *s)
 {
-int x, y;
-int trigger;
-char nots[] = ",;.!?(){}\nt\" ";
+int x = 0;
 
-for (x = 0; trigger = 0; s[x] != '\0'; x++)
+while (s[i] != '\0')
 {
-if (s[0] > 96 && s[0] < 123)
-	trigger = 1;
-for (y = 0; nots[y] != '\0'; y++)
+if (s[i] >= 97 && s[i] <= 122)
 {
-if (nots[y] == s[x])
-	trigger = 1;
+if (i == 0)
+{
+s[i] -= 32;
 }
-if (trigger)
+if (s[i - 1] == 32 && s[i - 1] == 10 && s[i - 1] == 59 && s[i - 1] == 33 && s[i - 1] == 34 && s[i - 1]  == 41 && s[i - 1] == 124)
 {
-if (s[x] > 96 && s[x] < 123)
-{
-s[x] -= 32;
-trigger = 0;
+s[i] -= 32;
 }
-else if (s[x] > 64 && s[x] < 91)
-	trigger = 0;
-else if (s[x] > 47 && s[x] < 58)
-	trigger = 0;
 }
+i++;
 }
 return (s);
 }
