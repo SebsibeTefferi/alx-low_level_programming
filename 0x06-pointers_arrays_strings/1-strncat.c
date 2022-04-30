@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * *_strncat - like _strcat but it will use n bytes from src
  * 
