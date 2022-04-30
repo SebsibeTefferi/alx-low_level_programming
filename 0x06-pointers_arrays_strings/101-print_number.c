@@ -1,8 +1,10 @@
 /**
  * print_number - prints an integer
  * @n: number to be printed
+ * 
  * Return: Always 0 (success)
  */
+
 void print_number(int n)
 {
 int power, neg, hold;
