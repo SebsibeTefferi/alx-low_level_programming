@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdio.h>
 /**
  * reverse_array - reverses content of an array of integers
  * 
