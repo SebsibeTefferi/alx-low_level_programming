@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * _strstr - prints  the conscuetive characters of s1 that are in s2
  * @haystack: source string
