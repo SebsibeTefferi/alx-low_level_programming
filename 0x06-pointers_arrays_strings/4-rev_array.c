@@ -13,7 +13,6 @@ int temp, s, e;
 
 s = 0;
 e = n - 1;
-
 while (s < e)
 {
 temp = a[s];
