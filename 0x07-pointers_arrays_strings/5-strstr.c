@@ -1,36 +1,35 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * _strstr - prints  the conscuetive characters of s1 that are in s2
- * @haystack: source string
- * @needle: searching string
- * Retrun: new string
+ * _strstr - locate a substring
+ * @haystack: string to search
+ * @needle: string to find
+ *
+ * Retrun: char value
  */
 char *_strstr(char *haystack, char *needle)
 {
-while (*haystack)
+int a = 0, b = 0;
+
+while (haystack[a])
 {
-if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+while (needle[b])
 {
-return (haystack);
-}
-else
+if (haystack[a + b] != needle[b])
 {
-haystack++;
-}
-}
-return (0);
+break;
 }
 
-int coincidence(char *a, char *b)
-{
-while (*b && *b == *a)
-{
 b++;
+}
+
+if (needle[b] == '\0')
+{
+return (haystack + a);
+}
+
 a++;
 }
-if (*b == '\0')
-return (1);
-else
-return (0);
+
+return ('\0');
 }
