@@ -37,12 +37,12 @@ return (0);
 }
 
 /**
- * is_palindrome(char *s)
+ * is_palindrome - palindrome
  * @s: pointer to string
  * Return: recursion
  */
 
-int is_palindome(char *s)
+int is_palindrome(char *s)
 {
 int len = _strlen_recursion(s);
 
